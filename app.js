@@ -23,7 +23,7 @@ app.configure(function(){
 //SETUP API
 
 app.get('/api/path', function(req, res){
-	res.send('PATH MO INA MO');
+	res.send('PATH MO INA MO, I MADE SOME CHANGES');
 });
 
 app.listen(3000);
