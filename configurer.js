@@ -1,3 +1,3 @@
 exports.creds = {
-	mongoose_auth : 'path to your mongoose'
+	mongoose_auth : 'MY ACTUAL PATH'
 }
