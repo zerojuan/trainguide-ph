@@ -1,3 +1,15 @@
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+html{
+	height: 100%;
+}
+
 body{
 	background: #ccc;
+	height: 100%;
+}
+
+#map_canvas{
+	height: 100%;
+	width: 100%;
 }
