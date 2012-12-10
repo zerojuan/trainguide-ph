@@ -1,1 +1,3 @@
-console.log('I AM SO LOADED');
+$(function(){
+	console.log('JQUERY HAS BEEN LOADED');
+});

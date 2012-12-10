@@ -2,8 +2,7 @@
 	"name" : "manila-transit",
 	"version" : "0.0.1-0",
 	"dependencies" : {
-		"express" : "3.0.0x",
-		"mongoose" : "2.7.2"
+		"express" : ""
 	},
 	"subdomain" : "manila-transit",
 	"scripts" :{
