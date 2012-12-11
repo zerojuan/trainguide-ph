@@ -2,7 +2,8 @@
 	"name" : "manila-transit",
 	"version" : "0.0.1-0",
 	"dependencies" : {
-		"express" : ""
+		"express" : "",
+		"googlemaps" : ""
 	},
 	"subdomain" : "manila-transit",
 	"scripts" :{
