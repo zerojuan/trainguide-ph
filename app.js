@@ -1,8 +1,7 @@
 var application_root = __dirname,
 	qs = require('querystring'),
 	express =  require("express"),
-	request = require("request"),
-	gmaps = require("googlemaps"),
+	request = require("request"),	
 	fs = require("fs");
 
 var app = express();
@@ -132,5 +131,5 @@ var saveLines = function(lines){
 		}
 	});
 }
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log('Listening to port 3000');

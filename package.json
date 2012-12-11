@@ -1,15 +1,15 @@
 {
-	"name" : "manila-transit",
-	"version" : "0.0.1-0",
-	"dependencies" : {
-		"express" : "",
-		"googlemaps" : ""
-	},
-	"subdomain" : "manila-transit",
-	"scripts" :{
-		"start" : "app.js"
-	},
-	"engines" : {
-		"node" : "0.6.x"
-	}
+  "name": "manila-transit",
+  "version": "0.0.1-10",
+  "dependencies": {
+    "express": "",
+    "request": ""
+  },
+  "subdomain": "manila-transit",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.6.x"
+  }
 }
