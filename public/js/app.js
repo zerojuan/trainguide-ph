@@ -1,63 +1,33 @@
 $(document).ready(function($) {
 	var mapStyle = [
-		  {
-		    featureType: "administrative",
-		    stylers: [
-		      { visibility: "off" }
-		    ]
-		  },{
-		    elementType: "labels",
-		    stylers: [
-		      { visibility: "off" }
-		    ]
-		  },{
-		    featureType: "landscape",
-		    stylers: [
-		      { visibility: "off" }
-		    ]
-		  },{
-		  	featureType: "water",
-		    stylers: [
-		      { saturation: -99 },
-		      { lightness: -29 }
-		    ]
-		  },{
-		    featureType: "water",
-		    elementType: "labels",
-		    stylers: [
-		      { visibility: "off" }
-		    ]
-  		  },{
-		    featureType: "poi",
-		    stylers: [
-		      { visibility: "off" }
-		    ]
-		  },{
-		    featureType: "road",
-		    elementType: "geometry",
-		    stylers: [
-		      { visibility: "simplified" },
-		      { saturation: -38 },
-		      { lightness: 35 },
-		      { hue: "#00eeff" }
-		    ]
-		  },{
-		    featureType: "road",
-		    stylers: [
-		      { visibility: "off" }
-		    ]
-		  },{
-		    featureType: "road",
-		    elementType: "geometry",
-		    stylers: [
-		      { visibility: "off" }
-		    ]
-		  },{
-		    "featureType": "transit.station.rail",
-		    "stylers": [
-		      { "visibility": "on" }
-		    ]
-		  }];
+		{
+			featureType:"road",
+			elementType:"geometry",
+			stylers:[{hue:"#8800ff"},{lightness:100}]
+		},{
+			featureType:"road",
+			stylers:[{visibility:"on"},{hue:"#91ff00"},{saturation:-62},{gamma:1.98},{lightness:45}]
+		},{
+			featureType:"water",
+			stylers:[{hue:"#005eff"},{gamma:.72},{lightness:42}]
+		},{
+			featureType:"transit.line",
+			stylers:[{visibility:"off"}]
+		},{
+			featureType:"administrative.locality",
+			stylers:[{visibility:"on"}]
+		},{
+			featureType:"administrative.neighborhood",
+			elementType:"geometry",
+			stylers:[{visibility:"simplified"}]
+		},{
+			featureType:"landscape",
+			stylers:[{visibility:"on"},{gamma:.41},{lightness:46}]
+		},{
+			featureType:"administrative.neighborhood",
+			elementType:"labels.text",
+			stylers:[{visibility:"on"},{saturation:33},{lightness:20}]
+		}];
 
 	var mapOptions = {
         center: new google.maps.LatLng(14.5833, 121),
