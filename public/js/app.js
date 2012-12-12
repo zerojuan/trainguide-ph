@@ -121,4 +121,26 @@ $(document).ready(function($) {
 			}
 		}
 	});
+
+	function drawCircle(svg){
+		svg.circle(15, 15, 10, {fill: 'none', stroke: 'red', strokeWidth: 3});
+	}
+
+	function div(){
+		var m = document.createElement('DIV');
+        m.innerHTML = '<div class="arrow" style="width: 30px; height: 30px;"></div>';
+        return m;
+	}
+
+	var marker = new RichMarker({
+		map : map,
+		position : new google.maps.LatLng(14.537622765362455, 121.00172281265259),
+		anchor : RichMarkerPosition.MIDDLE,
+		content : div(),
+		flat : true
+	});
+
+	google.maps.event.addListenerOnce(map, 'idle', function() {
+      $('.arrow').svg({onLoad: drawCircle});
+   });
 });
