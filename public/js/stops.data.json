@@ -3,17 +3,143 @@
 		"name" : "LRT1",
 		"stops" : [
 			{
-				"name" : "LRT1 Name",
+				"name" : "LRT-1 Baclaran",
 				"position" : {
-					"long" : 12232323.112,
-					"lat" : 12122323.211
+					"lat" : 14.534281259799442, 
+					"long" : 120.99835932254791
 				}
 			},
 			{
-				"name" : "LRT2 Name",
+				"name" : "LRT-1 EDSA",
 				"position" : {
-					"long" : 12232323.112,
-					"lat" : 12122323.211
+					"lat" : 14.538759956196797, 
+					"long" : 121.00065261125565
+				}
+			},
+			{
+				"name" : "LRT-1 Libertad",
+				"position" : {
+					"lat" : 14.547659959876254,  
+					"long" : 120.99862486124039
+				}
+			},
+			{
+				"name" : "LRT-1 Gil Puyat",
+				"position" : {
+					"lat" : 14.554308765855605, 
+					"long" : 120.99710404872894
+				}
+			},
+			{
+				"name" : "LRT-1 Vito Cruz",
+				"position" : {
+					"lat" : 14.563402844951298, 
+					"long" : 120.99480271339417
+				}
+			},
+			{
+				"name" : "LRT-1 Quirino",
+				"position" : {
+					"lat" : 14.570284811987875, 
+					"long" : 120.99151700735092
+				}
+			},
+			{
+				"name" : "LRT-1 Pedro Gil",
+				"position" : {
+					"lat" : 14.576600664331668, 
+					"long" : 120.9879469871521
+				}
+			},
+			{
+				"name" : "LRT-1 United Nations",
+				"position" : {
+					"lat" : 14.582633393281668, 
+					"long" : 120.98457545042038
+				}
+			},
+			{
+				"name" : "LRT-1 Central Terminal",
+				"position" : {
+					"lat" : 14.59272304864208, 
+					"long" : 120.98163306713104
+				}
+			},
+			{
+				"name" : "LRT-1 Carriedo",
+				"position" : {
+					"lat" : 14.599087574034026, 
+					"long" : 120.98134070634842
+				}
+			},
+			{
+				"name" : "LRT-1 Doroteo Jose",
+				"position" : {
+					"lat" : 14.60538702693039, 
+					"long" : 120.9820407629013
+				}
+			},
+			{
+				"name" : "LRT-1 Bambang",
+				"position" : {
+					"lat" : 14.61112567921225, 
+					"long" : 120.98246723413467
+				}
+			},
+			{
+				"name" : "LRT-1 Tayuman",
+				"position" : {
+					"lat" : 14.616625404810092, 
+					"long" : 120.98275691270828
+				}
+			},
+			{
+				"name" : "LRT-1 Blumentritt",
+				"position" : {
+					"lat" : 14.622612915549334, 
+					"long" : 120.98289102315903
+				}
+			},
+			{
+				"name" : "LRT-1 Abad Santos",
+				"position" : {
+					"lat" : 14.63052074737543, 
+					"long" : 120.98150163888931
+				}
+			},
+			{
+				"name" : "LRT-1 R. Papa",
+				"position" : {
+					"lat" : 14.635931751356564, 
+					"long" : 120.9822928905487
+				}
+			},
+			{
+				"name" : "LRT-1 5th Avenue",
+				"position" : {
+					"lat" : 14.64431400240351, 
+					"long" : 120.98354816436768
+				}
+			},
+			{
+				"name" : "LRT-1 Monumento",
+				"position" : {
+					"lat" : 14.65420879842159, 
+					"long" : 120.98388075828552
+				}
+			},
+			{
+				"name" : "LRT-1 Balintawak",
+				"position" : {
+					"lat" : 14.65739278804463, 
+					"long" : 121.00391954183578
+				}
+			},
+			{
+				"name" : "LRT-1 Roosevelt",
+				"position" : {
+					"lat" :  14.657496584808488, 
+					"long" : 121.02119028568268
 				}
 			}
 		]
@@ -22,17 +148,73 @@
 		"name" : "LRT2",
 		"stops" : [
 			{
-				"name" : "LRT1 Name",
+				"name" : "LRT-2 Recto",
 				"position" : {
-					"long" : 12232323.112,
-					"lat" : 12122323.211
+					"lat" : 14.603500065120615, 
+					"long" : 120.98353207111359
 				}
 			},
 			{
-				"name" : "LRT2 Name",
+				"name" : "LRT-2 Legarda",
 				"position" : {
-					"long" : 12232323.112,
-					"lat" : 12122323.211
+					"lat" : 14.600847389914959, 
+					"long" : 120.9924852848053
+				}
+			},
+			{
+				"name" : "LRT-2 Pureza",
+				"position" : {
+					"lat" : 14.60169874121695, 
+					"long" : 121.00505411624908
+				}
+			},
+			{
+				"name" : "LRT-2 V. Mapa",
+				"position" : {
+					"lat" : 14.603985433735462, 
+					"long" : 121.01700335741043
+				}
+			},
+			{
+				"name" : "LRT-2 J. Ruiz",
+				"position" : {
+					"lat" : 14.610568950851428, 
+					"long" : 121.02609604597092
+				}
+			},
+			{
+				"name" : "LRT-2 Gilmore",
+				"position" : {
+					"lat" : 14.613508304935424, 
+					"long" : 121.0341440141201
+				}
+			},
+			{
+				"name" : "LRT-2 Araneta Center- Cubao",
+				"position" : {
+					"lat" : 14.622832220928029, 
+					"long" : 121.05285510420799
+				}
+			},
+			{
+				"name" : "LRT-2 Anonas",
+				"position" : {
+					"lat" : 14.62800205469682, 
+					"long" : 121.06465011835098
+				}
+			},
+			{
+				"name" : "LRT-2 Katipunan",
+				"position" : {
+					"lat" : 14.630947663568637, 
+					"long" : 121.07262030243874
+				}
+			},
+			{
+				"name" : "LRT-2 Santolan",
+				"position" : {
+					"lat" : 14.621982249156975, 
+					"long" : 121.0859414935112
 				}
 			}
 		]
@@ -41,7 +223,7 @@
 		"name" : "MRT",
 		"stops" : [
 			{
-				"name" : "MRT Taft",
+				"name" : "MRT-3 Taft Avenue",
 				"position" : {
 					"lat" : 14.53755006803244, 
 					"long" : 121.00144922733307
@@ -76,56 +258,56 @@
 				}
 			},
 			{
-				"name" : "MRT Boni",
+				"name" : "MRT Boni Avenue",
 				"position" : {
 					"lat" : 14.57370105381468, 					
 					"long" : 121.04808211326599
 				}
 			},
 			{
-				"name" : "MRT Shaw",
+				"name" : "MRT-3 Shaw Boulevard",
 				"position" : {
 					"lat" : 14.581196611595162,  					
 					"long" : 121.0536128282547
 				}
 			},
 			{
-				"name" : "MRT Ortigas",
+				"name" : "MRT-3 Ortigas Avenue",
 				"position" : {
 					"lat" : 14.587797682935673,   					
 					"long" : 121.0567094385624
 				}
 			},
 			{
-				"name" : "MRT Santolan-Annapolis",
+				"name" : "MRT-3 Santolan-Annapolis",
 				"position" : {
 					"lat" : 14.607822922734975,    					
 					"long" : 121.05641573667526
 				}
 			},
 			{
-				"name" : "MRT Araneta Center - Cubao",
+				"name" : "MRT-3 Araneta Center - Cubao",
 				"position" : {
 					"lat" : 14.619571166294019,     					
 					"long" : 121.05099231004715
 				}
 			},
 			{
-				"name" : "MRT GMA - Kamuning",
+				"name" : "MRT-3 GMA - Kamuning",
 				"position" : {
 					"lat" : 14.635205101503816,      					
 					"long" : 121.04333460330963
 				}
 			},
 			{
-				"name" : "MRT Quezon Avenue",
+				"name" : "MRT-3 Quezon Avenue",
 				"position" : {
 					"lat" : 14.642606436687998,       					
 					"long" : 121.03848248720169
 				}
 			}, 
 			{
-				"name" : "MRT North Avenue",
+				"name" : "MRT-3 North Avenue",
 				"position" : {
 					"lat" : 14.652153582503889,        					
 					"long" : 121.03233218193054
@@ -137,17 +319,122 @@
 		"name" : "PNR",
 		"stops" : [
 			{
-				"name" : "LRT1 Name",
+				"name" : "PNR Alabang",
 				"position" : {
-					"long" : 12232323.112,
-					"lat" : 12122323.211
+					"lat" : 14.417033139896843, 
+					"long" : 121.0476154088974
 				}
 			},
 			{
-				"name" : "LRT2 Name",
+				"name" : "PNR Sucat",
 				"position" : {
-					"long" : 12232323.112,
-					"lat" : 12122323.211
+					"lat" : 14.452303814430618, 
+					"long" : 121.0509379953146
+				}
+			},
+			{
+				"name" : "PNR Bicutan",
+				"position" : {
+					"lat" : 14.48803049600591, 
+					"long" : 121.04542471468449
+				}
+			},
+			{
+				"name" : "PNR FTI",
+				"position" : {
+					"lat" : 14.506600903312087, 
+					"long" : 121.03542409837246
+				}
+			},
+			{
+				"name" : "PNR Nichols",
+				"position" : {
+					"lat" :  14.52351579005844, 
+					"long" : 121.02632135152817
+				}
+			},
+			{
+				"name" : "PNR EDSA",
+				"position" : {
+					"lat" :  14.541826837227935, 
+					"long" : 121.01641997694969
+				}
+			},
+			{
+				"name" : "PNR Pasay Rd",
+				"position" : {
+					"lat" : 14.549832980971122, 
+					"long" : 121.01210631430149
+				}
+			},
+			{
+				"name" : "PNR Buendia",
+				"position" : {
+					"lat" : 14.557335191345777,
+					"long" : 121.0080648958683
+				}
+			},
+			{
+				"name" : "PNR Vito Cruz",
+				"position" : {
+					"lat" : 14.56716900271235, 
+					"long" : 121.00276485085487
+				}
+			},
+			{
+				"name" : "PNR San Andres",
+				"position" : {
+					"lat" : 14.573271430568829, 
+					"long" : 120.9994737803936
+				}
+			},
+			{
+				"name" : "PNR Paco",
+				"position" : {
+					"lat" : 14.57911215826824, 
+					"long" : 120.9992565214634
+				}
+			},
+			{
+				"name" : "PNR Pandacan",
+				"position" : {
+					"lat" : 14.590246752070831, 
+					"long" : 121.00880585610867
+				}
+			},
+			{
+				"name" : "PNR Santa Mesa",
+				"position" : {
+					"lat" : 14.600798073732479, 
+					"long" : 121.01028442382812
+				}
+			},
+			{
+				"name" : "PNR Espana",
+				"position" : {
+					"lat" : 14.612235887385992, 
+					"long" : 120.99688276648521
+				}
+			},
+			{
+				"name" : "PNR Laong Laan",
+				"position" : {
+					"lat" : 14.616708457657383, 
+					"long" : 120.99258653819561
+				}
+			},
+			{
+				"name" : "PNR Blumentritt",
+				"position" : {
+					"lat" : 14.622648601350736, 
+					"long" : 120.9834636747837
+				}
+			},
+			{
+				"name" : "PNR Tutuban",
+				"position" : {
+					"lat" : 14.611323583476302, 
+					"long" : 120.97309894859791
 				}
 			}
 		]

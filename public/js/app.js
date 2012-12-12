@@ -16,7 +16,7 @@ $(document).ready(function($) {
 		    ]
 		},{
 		    featureType: "transit.station",
-		    elementType: "labels.icon",
+		    elementType: "labels",
 		    stylers: [
 		      { visibility: "off" }
 		    ]
@@ -120,27 +120,93 @@ $(document).ready(function($) {
 					break;
 			}
 		}
+		$.getJSON('./js/stops.data.json', function(json){
+			for(var i in json){
+				var line = json[i];
+				makeStopMarkers(line);				
+			}
+		});
 	});
 
-	function drawCircle(svg){
-		svg.circle(15, 15, 10, {fill: 'white', stroke: '#5384c4', strokeWidth: 3});
+	function makeStopMarkers(line){
+		for(var i in line.stops){
+			var stop = line.stops[i];
+			var marker = new RichMarker({
+				map: map,
+				position : new google.maps.LatLng(stop.position.lat, stop.position.long),
+				anchor : RichMarkerPosition.MIDDLE,
+				content : div(line.name),
+				flat : true
+			});			
+			
+			attachInfoWindow(marker, stop);
+			
+			
+		}
 	}
 
-	function div(){
+	var selectedWindow;
+
+	function attachInfoWindow(marker, stop){
+		var infoWindow = createInfoWindow(stop.name);
+		google.maps.event.addListener(marker, 'mouseover', function(){
+			if(selectedWindow){
+				selectedWindow.close();
+			}
+			infoWindow.open(map, marker);
+			selectedWindow = infoWindow;
+		});
+		google.maps.event.addListener(marker, 'mouseout', function(){
+			if(selectedWindow){
+				selectedWindow.close();
+			}			
+		});
+	}
+
+	function drawCircle(svg, color){
+		svg.circle(15, 15, 10, {fill: 'white', stroke: color, strokeWidth: 3});
+	}
+
+	function createInfoWindow(name){
+		console.log('Creating new info window: ' + name);
+		return new InfoBox({
+			content : '<div class="infobox">'+name+'</div>',
+			boxStyle :{
+				opacity : 0.75
+			},
+			closeBoxURL : "",
+			maxWidth : 100,
+			pixelOffset: new google.maps.Size(-50, -60),
+			infoBoxClearance: new google.maps.Size(2,2)
+		});
+	}
+
+	function div(name){
 		var m = document.createElement('DIV');
-        m.innerHTML = '<div class="arrow" style="width: 30px; height: 30px;"></div>';
+        m.innerHTML = '<div class="stop-marker '+name+'" style="width: 30px; height: 30px;"></div>';
         return m;
 	}
-
-	var marker = new RichMarker({
-		map : map,
-		position : new google.maps.LatLng(14.53755006803244, 121.00144922733307),
-		anchor : RichMarkerPosition.MIDDLE,
-		content : div(),
-		flat : true
+	
+	google.maps.event.addListener(map, 'click', function(event){
+		console.log(event.latLng);
 	});
 
 	google.maps.event.addListenerOnce(map, 'idle', function() {
-      $('.arrow').svg({onLoad: drawCircle});
+      $('.LRT1').svg({onLoad: function(svg){
+      		drawCircle(svg, '#fdc33c');
+      	}
+      });
+      $('.LRT2').svg({onLoad: function(svg){
+      		drawCircle(svg, '#f28740');
+      	}
+      });
+      $('.MRT').svg({onLoad: function(svg){
+      		drawCircle(svg, '#5384c4');
+      	}
+      });
+      $('.PNR').svg({onLoad: function(svg){
+      		drawCircle(svg, '#ad86bc');
+      	}
+      });
    });
 });

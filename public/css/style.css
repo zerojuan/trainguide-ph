@@ -59,6 +59,14 @@ body{
 	altehaasgrotesk_bold
 }
 
-.arrow {
+.stop-marker {
 	background: none;
+}
+
+.infobox{
+	background: white;
+	width: 150px;
+	padding: 5px;
+	min-height: 30px;
+	text-align: center;
 }

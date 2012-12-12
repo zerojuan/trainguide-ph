@@ -1,6 +1,6 @@
 {
   "name": "manila-transit",
-  "version": "0.0.1-10",
+  "version": "0.0.1-11",
   "dependencies": {
     "express": "",
     "request": ""
