@@ -1,0 +1,155 @@
+[
+	{
+		"name" : "LRT1",
+		"stops" : [
+			{
+				"name" : "LRT1 Name",
+				"position" : {
+					"long" : 12232323.112,
+					"lat" : 12122323.211
+				}
+			},
+			{
+				"name" : "LRT2 Name",
+				"position" : {
+					"long" : 12232323.112,
+					"lat" : 12122323.211
+				}
+			}
+		]
+	},
+	{
+		"name" : "LRT2",
+		"stops" : [
+			{
+				"name" : "LRT1 Name",
+				"position" : {
+					"long" : 12232323.112,
+					"lat" : 12122323.211
+				}
+			},
+			{
+				"name" : "LRT2 Name",
+				"position" : {
+					"long" : 12232323.112,
+					"lat" : 12122323.211
+				}
+			}
+		]
+	},
+	{
+		"name" : "MRT",
+		"stops" : [
+			{
+				"name" : "MRT Taft",
+				"position" : {
+					"lat" : 14.53755006803244, 
+					"long" : 121.00144922733307
+				}
+			},
+			{
+				"name" : "MRT Magallanes",
+				"position" : {
+					"lat" : 14.541901480362466, 					
+					"long" : 121.01931273937225
+				}
+			},
+			{
+				"name" : "MRT Ayala",
+				"position" : {
+					"lat" : 14.54918263460663, 					
+					"long" : 121.02807819843292
+				}
+			},
+			{
+				"name" : "MRT Buendia",
+				"position" : {
+					"lat" : 14.554687801473998, 					
+					"long" : 121.03461608290672
+				}
+			},
+			{
+				"name" : "MRT Guadalupe",
+				"position" : {
+					"lat" : 14.56705802431508, 					
+					"long" : 121.04554608464241
+				}
+			},
+			{
+				"name" : "MRT Boni",
+				"position" : {
+					"lat" : 14.57370105381468, 					
+					"long" : 121.04808211326599
+				}
+			},
+			{
+				"name" : "MRT Shaw",
+				"position" : {
+					"lat" : 14.581196611595162,  					
+					"long" : 121.0536128282547
+				}
+			},
+			{
+				"name" : "MRT Ortigas",
+				"position" : {
+					"lat" : 14.587797682935673,   					
+					"long" : 121.0567094385624
+				}
+			},
+			{
+				"name" : "MRT Santolan-Annapolis",
+				"position" : {
+					"lat" : 14.607822922734975,    					
+					"long" : 121.05641573667526
+				}
+			},
+			{
+				"name" : "MRT Araneta Center - Cubao",
+				"position" : {
+					"lat" : 14.619571166294019,     					
+					"long" : 121.05099231004715
+				}
+			},
+			{
+				"name" : "MRT GMA - Kamuning",
+				"position" : {
+					"lat" : 14.635205101503816,      					
+					"long" : 121.04333460330963
+				}
+			},
+			{
+				"name" : "MRT Quezon Avenue",
+				"position" : {
+					"lat" : 14.642606436687998,       					
+					"long" : 121.03848248720169
+				}
+			}, 
+			{
+				"name" : "MRT North Avenue",
+				"position" : {
+					"lat" : 14.652153582503889,        					
+					"long" : 121.03233218193054
+				}
+			}
+		]
+	},
+	{
+		"name" : "PNR",
+		"stops" : [
+			{
+				"name" : "LRT1 Name",
+				"position" : {
+					"long" : 12232323.112,
+					"lat" : 12122323.211
+				}
+			},
+			{
+				"name" : "LRT2 Name",
+				"position" : {
+					"long" : 12232323.112,
+					"lat" : 12122323.211
+				}
+			}
+		]
+	}
+]

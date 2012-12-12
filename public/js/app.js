@@ -123,7 +123,7 @@ $(document).ready(function($) {
 	});
 
 	function drawCircle(svg){
-		svg.circle(15, 15, 10, {fill: 'none', stroke: 'red', strokeWidth: 3});
+		svg.circle(15, 15, 10, {fill: 'white', stroke: '#5384c4', strokeWidth: 3});
 	}
 
 	function div(){
@@ -134,7 +134,7 @@ $(document).ready(function($) {
 
 	var marker = new RichMarker({
 		map : map,
-		position : new google.maps.LatLng(14.537622765362455, 121.00172281265259),
+		position : new google.maps.LatLng(14.53755006803244, 121.00144922733307),
 		anchor : RichMarkerPosition.MIDDLE,
 		content : div(),
 		flat : true
