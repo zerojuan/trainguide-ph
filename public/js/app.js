@@ -125,8 +125,44 @@ $(document).ready(function($) {
 				var line = json[i];
 				makeStopMarkers(line);				
 			}
-		});
+
+			var circleDrawn = false;
+			google.maps.event.addListenerOnce(map, 'idle', function() {				
+				if(!circleDrawn){
+					drawCircles();
+					circleDrawn = true;
+				}		      		
+			});
+			google.maps.event.addListenerOnce(map, 'tilesloaded', function() {				
+				if(!circleDrawn){
+					drawCircles();
+					circleDrawn = true;
+				}		      		
+			});
 	});
+
+	function drawCircles(){
+		$('.LRT1').svg({onLoad: function(svg){
+		      		console.log('Drawing: .LRT1');
+		      		drawCircle(svg, '#fdc33c');
+		      	}
+		      });
+		      $('.LRT2').svg({onLoad: function(svg){
+		      		console.log('Drawing: .LRT2');
+		      		drawCircle(svg, '#f28740');
+		      	}
+		      });
+		      $('.MRT').svg({onLoad: function(svg){
+		      		console.log('Drawing: .MRT');
+		      		drawCircle(svg, '#5384c4');
+		      	}
+		      });
+		      $('.PNR').svg({onLoad: function(svg){
+		      		console.log('Drawing: .PNR');
+		      		drawCircle(svg, '#ad86bc');
+		      	}
+		      });
+	}
 
 	function makeStopMarkers(line){
 		for(var i in line.stops){
@@ -191,26 +227,6 @@ $(document).ready(function($) {
 		console.log(event.latLng);
 	});
 
-	google.maps.event.addListenerOnce(map, 'idle', function() {
-      $('.LRT1').svg({onLoad: function(svg){
-      		console.log('Drawing: .LRT1');
-      		drawCircle(svg, '#fdc33c');
-      	}
-      });
-      $('.LRT2').svg({onLoad: function(svg){
-      		console.log('Drawing: .LRT2');
-      		drawCircle(svg, '#f28740');
-      	}
-      });
-      $('.MRT').svg({onLoad: function(svg){
-      		console.log('Drawing: .MRT');
-      		drawCircle(svg, '#5384c4');
-      	}
-      });
-      $('.PNR').svg({onLoad: function(svg){
-      		console.log('Drawing: .PNR');
-      		drawCircle(svg, '#ad86bc');
-      	}
-      });
+	
    });
 });
