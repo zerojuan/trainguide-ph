@@ -230,35 +230,35 @@
 				}
 			},
 			{
-				"name" : "MRT Magallanes",
+				"name" : "MRT-3 Magallanes",
 				"position" : {
 					"lat" : 14.541901480362466, 					
 					"long" : 121.01931273937225
 				}
 			},
 			{
-				"name" : "MRT Ayala",
+				"name" : "MRT-3 Ayala",
 				"position" : {
 					"lat" : 14.54918263460663, 					
 					"long" : 121.02807819843292
 				}
 			},
 			{
-				"name" : "MRT Buendia",
+				"name" : "MRT-3 Buendia",
 				"position" : {
 					"lat" : 14.554687801473998, 					
 					"long" : 121.03461608290672
 				}
 			},
 			{
-				"name" : "MRT Guadalupe",
+				"name" : "MRT-3 Guadalupe",
 				"position" : {
 					"lat" : 14.56705802431508, 					
 					"long" : 121.04554608464241
 				}
 			},
 			{
-				"name" : "MRT Boni Avenue",
+				"name" : "MRT-3 Boni Avenue",
 				"position" : {
 					"lat" : 14.57370105381468, 					
 					"long" : 121.04808211326599

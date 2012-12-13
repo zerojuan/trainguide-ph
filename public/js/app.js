@@ -168,7 +168,7 @@ $(document).ready(function($) {
 	}
 
 	function createInfoWindow(name){
-		console.log('Creating new info window: ' + name);
+		//console.log('Creating new info window: ' + name);
 		return new InfoBox({
 			content : '<div class="infobox">'+name+'</div>',
 			boxStyle :{
@@ -193,18 +193,22 @@ $(document).ready(function($) {
 
 	google.maps.event.addListenerOnce(map, 'idle', function() {
       $('.LRT1').svg({onLoad: function(svg){
+      		console.log('Drawing: .LRT1');
       		drawCircle(svg, '#fdc33c');
       	}
       });
       $('.LRT2').svg({onLoad: function(svg){
+      		console.log('Drawing: .LRT2');
       		drawCircle(svg, '#f28740');
       	}
       });
       $('.MRT').svg({onLoad: function(svg){
+      		console.log('Drawing: .MRT');
       		drawCircle(svg, '#5384c4');
       	}
       });
       $('.PNR').svg({onLoad: function(svg){
+      		console.log('Drawing: .PNR');
       		drawCircle(svg, '#ad86bc');
       	}
       });
