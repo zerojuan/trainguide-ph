@@ -7,6 +7,14 @@
 				"position" : {
 					"lat" : 14.534281259799442, 
 					"long" : 120.99835932254791
+				},
+				"details" : {
+					"description" : "Description of Baclaran Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -14,6 +22,14 @@
 				"position" : {
 					"lat" : 14.538759956196797, 
 					"long" : 121.00065261125565
+				},
+				"details" : {
+					"description" : "Description of EDSA Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -21,6 +37,14 @@
 				"position" : {
 					"lat" : 14.547659959876254,  
 					"long" : 120.99862486124039
+				},
+				"details" : {
+					"description" : "Description of Libertad Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -28,6 +52,14 @@
 				"position" : {
 					"lat" : 14.554308765855605, 
 					"long" : 120.99710404872894
+				},
+				"details" : {
+					"description" : "Description of Gil Puyat Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -35,6 +67,14 @@
 				"position" : {
 					"lat" : 14.563402844951298, 
 					"long" : 120.99480271339417
+				},
+				"details" : {
+					"description" : "Description of Vito Cruz",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -42,6 +82,14 @@
 				"position" : {
 					"lat" : 14.570284811987875, 
 					"long" : 120.99151700735092
+				},
+				"details" : {
+					"description" : "Description of Quirino Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -49,6 +97,14 @@
 				"position" : {
 					"lat" : 14.576600664331668, 
 					"long" : 120.9879469871521
+				},
+				"details" : {
+					"description" : "Description of Pedro Gil Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -56,6 +112,14 @@
 				"position" : {
 					"lat" : 14.582633393281668, 
 					"long" : 120.98457545042038
+				},
+				"details" : {
+					"description" : "Description of United Nations Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -63,6 +127,14 @@
 				"position" : {
 					"lat" : 14.59272304864208, 
 					"long" : 120.98163306713104
+				},
+				"details" : {
+					"description" : "Description of Central Terminal Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -70,6 +142,14 @@
 				"position" : {
 					"lat" : 14.599087574034026, 
 					"long" : 120.98134070634842
+				},
+				"details" : {
+					"description" : "Description of Carriedo Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -77,6 +157,14 @@
 				"position" : {
 					"lat" : 14.60538702693039, 
 					"long" : 120.9820407629013
+				},
+				"details" : {
+					"description" : "Description of Doroteo Jose Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -84,6 +172,14 @@
 				"position" : {
 					"lat" : 14.61112567921225, 
 					"long" : 120.98246723413467
+				},
+				"details" : {
+					"description" : "Description of Bambang Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -91,6 +187,14 @@
 				"position" : {
 					"lat" : 14.616625404810092, 
 					"long" : 120.98275691270828
+				},
+				"details" : {
+					"description" : "Description of Tayuman Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -98,6 +202,14 @@
 				"position" : {
 					"lat" : 14.622612915549334, 
 					"long" : 120.98289102315903
+				},
+				"details" : {
+					"description" : "Description of Blumentritt Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -105,6 +217,14 @@
 				"position" : {
 					"lat" : 14.63052074737543, 
 					"long" : 120.98150163888931
+				},
+				"details" : {
+					"description" : "Description of Abad Santos Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -112,6 +232,14 @@
 				"position" : {
 					"lat" : 14.635931751356564, 
 					"long" : 120.9822928905487
+				},
+				"details" : {
+					"description" : "Description of R. Papa Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -119,6 +247,14 @@
 				"position" : {
 					"lat" : 14.64431400240351, 
 					"long" : 120.98354816436768
+				},
+				"details" : {
+					"description" : "Description of 5th Avenue Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -126,6 +262,14 @@
 				"position" : {
 					"lat" : 14.65420879842159, 
 					"long" : 120.98388075828552
+				},
+				"details" : {
+					"description" : "Description of Monumento Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -133,6 +277,14 @@
 				"position" : {
 					"lat" : 14.65739278804463, 
 					"long" : 121.00391954183578
+				},
+				"details" : {
+					"description" : "Description of Balintawak Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -140,6 +292,14 @@
 				"position" : {
 					"lat" :  14.657496584808488, 
 					"long" : 121.02119028568268
+				},
+				"details" : {
+					"description" : "Description of Roosevelt Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			}
 		]
@@ -152,6 +312,14 @@
 				"position" : {
 					"lat" : 14.603500065120615, 
 					"long" : 120.98353207111359
+				},
+				"details" : {
+					"description" : "Description of Recto Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -159,6 +327,14 @@
 				"position" : {
 					"lat" : 14.600847389914959, 
 					"long" : 120.9924852848053
+				},
+				"details" : {
+					"description" : "Description of Legarda Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -166,6 +342,14 @@
 				"position" : {
 					"lat" : 14.60169874121695, 
 					"long" : 121.00505411624908
+				},
+				"details" : {
+					"description" : "Description of Pureza Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -173,6 +357,14 @@
 				"position" : {
 					"lat" : 14.603985433735462, 
 					"long" : 121.01700335741043
+				},
+				"details" : {
+					"description" : "Description of V. Mapa Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -180,6 +372,14 @@
 				"position" : {
 					"lat" : 14.610568950851428, 
 					"long" : 121.02609604597092
+				},
+				"details" : {
+					"description" : "Description of J. Ruiz Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -187,6 +387,14 @@
 				"position" : {
 					"lat" : 14.613508304935424, 
 					"long" : 121.0341440141201
+				},
+				"details" : {
+					"description" : "Description of Gilmore Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -194,6 +402,14 @@
 				"position" : {
 					"lat" : 14.622832220928029, 
 					"long" : 121.05285510420799
+				},
+				"details" : {
+					"description" : "Description of Araneta Center Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -201,6 +417,14 @@
 				"position" : {
 					"lat" : 14.62800205469682, 
 					"long" : 121.06465011835098
+				},
+				"details" : {
+					"description" : "Description of Anonas Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -208,6 +432,14 @@
 				"position" : {
 					"lat" : 14.630947663568637, 
 					"long" : 121.07262030243874
+				},
+				"details" : {
+					"description" : "Description of Katipunan Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -215,6 +447,14 @@
 				"position" : {
 					"lat" : 14.621982249156975, 
 					"long" : 121.0859414935112
+				},
+				"details" : {
+					"description" : "Description of Santolan Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			}
 		]
@@ -227,6 +467,14 @@
 				"position" : {
 					"lat" : 14.53755006803244, 
 					"long" : 121.00144922733307
+				},
+				"details" : {
+					"description" : "Description of Taft Avenue Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -234,6 +482,14 @@
 				"position" : {
 					"lat" : 14.541901480362466, 					
 					"long" : 121.01931273937225
+				},
+				"details" : {
+					"description" : "Description of Magallanes Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -241,6 +497,14 @@
 				"position" : {
 					"lat" : 14.54918263460663, 					
 					"long" : 121.02807819843292
+				},
+				"details" : {
+					"description" : "Description of Ayala Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -248,6 +512,14 @@
 				"position" : {
 					"lat" : 14.554687801473998, 					
 					"long" : 121.03461608290672
+				},
+				"details" : {
+					"description" : "Description of Buendia Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -255,6 +527,14 @@
 				"position" : {
 					"lat" : 14.56705802431508, 					
 					"long" : 121.04554608464241
+				},
+				"details" : {
+					"description" : "Description of Guadalupe Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -262,6 +542,14 @@
 				"position" : {
 					"lat" : 14.57370105381468, 					
 					"long" : 121.04808211326599
+				},
+				"details" : {
+					"description" : "Description of Boni Avenue Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -269,6 +557,14 @@
 				"position" : {
 					"lat" : 14.581196611595162,  					
 					"long" : 121.0536128282547
+				},
+				"details" : {
+					"description" : "Description of Shaw Boulevard Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -276,6 +572,14 @@
 				"position" : {
 					"lat" : 14.587797682935673,   					
 					"long" : 121.0567094385624
+				},
+				"details" : {
+					"description" : "Description of Ortigas Avenue Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -283,6 +587,14 @@
 				"position" : {
 					"lat" : 14.607822922734975,    					
 					"long" : 121.05641573667526
+				},
+				"details" : {
+					"description" : "Description of Santolan-Annapolis Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -290,6 +602,14 @@
 				"position" : {
 					"lat" : 14.619571166294019,     					
 					"long" : 121.05099231004715
+				},
+				"details" : {
+					"description" : "Description of Araneta Center - Cubao Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -297,6 +617,14 @@
 				"position" : {
 					"lat" : 14.635205101503816,      					
 					"long" : 121.04333460330963
+				},
+				"details" : {
+					"description" : "Description of GMA Kamuning",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -304,6 +632,14 @@
 				"position" : {
 					"lat" : 14.642606436687998,       					
 					"long" : 121.03848248720169
+				},
+				"details" : {
+					"description" : "Description of Quezon Avenue",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			}, 
 			{
@@ -311,6 +647,14 @@
 				"position" : {
 					"lat" : 14.652153582503889,        					
 					"long" : 121.03233218193054
+				},
+				"details" : {
+					"description" : "Description of North Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			}
 		]
@@ -323,6 +667,14 @@
 				"position" : {
 					"lat" : 14.417033139896843, 
 					"long" : 121.0476154088974
+				},
+				"details" : {
+					"description" : "Description of Alabang Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -330,6 +682,14 @@
 				"position" : {
 					"lat" : 14.452303814430618, 
 					"long" : 121.0509379953146
+				},
+				"details" : {
+					"description" : "Description of Sucat Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -337,6 +697,14 @@
 				"position" : {
 					"lat" : 14.48803049600591, 
 					"long" : 121.04542471468449
+				},
+				"details" : {
+					"description" : "Description of Bicutan Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -344,6 +712,14 @@
 				"position" : {
 					"lat" : 14.506600903312087, 
 					"long" : 121.03542409837246
+				},
+				"details" : {
+					"description" : "Description of FTI Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -351,6 +727,14 @@
 				"position" : {
 					"lat" :  14.52351579005844, 
 					"long" : 121.02632135152817
+				},
+				"details" : {
+					"description" : "Description of Nichols Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -358,6 +742,14 @@
 				"position" : {
 					"lat" :  14.541826837227935, 
 					"long" : 121.01641997694969
+				},
+				"details" : {
+					"description" : "Description of EDSA Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -365,6 +757,14 @@
 				"position" : {
 					"lat" : 14.549832980971122, 
 					"long" : 121.01210631430149
+				},
+				"details" : {
+					"description" : "Description of Pasay Rd Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -372,6 +772,14 @@
 				"position" : {
 					"lat" : 14.557335191345777,
 					"long" : 121.0080648958683
+				},
+				"details" : {
+					"description" : "Description of Buendia Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -379,6 +787,14 @@
 				"position" : {
 					"lat" : 14.56716900271235, 
 					"long" : 121.00276485085487
+				},
+				"details" : {
+					"description" : "Description of Vito Cruz Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -386,6 +802,14 @@
 				"position" : {
 					"lat" : 14.573271430568829, 
 					"long" : 120.9994737803936
+				},
+				"details" : {
+					"description" : "Description of San Andres Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -393,6 +817,14 @@
 				"position" : {
 					"lat" : 14.57911215826824, 
 					"long" : 120.9992565214634
+				},
+				"details" : {
+					"description" : "Description of Paco Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -400,6 +832,14 @@
 				"position" : {
 					"lat" : 14.590246752070831, 
 					"long" : 121.00880585610867
+				},
+				"details" : {
+					"description" : "Description of Pandacan Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -407,6 +847,14 @@
 				"position" : {
 					"lat" : 14.600798073732479, 
 					"long" : 121.01028442382812
+				},
+				"details" : {
+					"description" : "Description of Santa Mesa Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -414,6 +862,14 @@
 				"position" : {
 					"lat" : 14.612235887385992, 
 					"long" : 120.99688276648521
+				},
+				"details" : {
+					"description" : "Description of Espana Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -421,6 +877,14 @@
 				"position" : {
 					"lat" : 14.616708457657383, 
 					"long" : 120.99258653819561
+				},
+				"details" : {
+					"description" : "Description of Laong Laan Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -428,6 +892,14 @@
 				"position" : {
 					"lat" : 14.622648601350736, 
 					"long" : 120.9834636747837
+				},
+				"details" : {
+					"description" : "Description of Blumentritt Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			},
 			{
@@ -435,6 +907,14 @@
 				"position" : {
 					"lat" : 14.611323583476302, 
 					"long" : 120.97309894859791
+				},
+				"details" : {
+					"description" : "Description of Tutuban Station",
+					"image" : "test",
+					"stops" : [
+						"x1",
+						"x2"
+					]
 				}
 			}
 		]

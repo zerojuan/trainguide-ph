@@ -1,4 +1,9 @@
 $(document).ready(function($) {
+	var LRT1_COLOR = '#fdc33c';
+	var LRT2_COLOR = '#ad86bc';
+	var MRT_COLOR = '#5384c4';
+	var PNR_COLOR = '#f28740';
+
 	var mapStyle = [
 		{
 			featureType:"road",
@@ -60,22 +65,22 @@ $(document).ready(function($) {
 	var directionsService = new google.maps.DirectionsService();
 
 	var lrt1Display = new google.maps.Polyline({
-		strokeColor : '#fdc33c',
+		strokeColor : LRT1_COLOR,
 		strokeOpacity : 0.9,
 		strokeWeight : 6
 	});
 	var lrt2Display = new google.maps.Polyline({
-		strokeColor : '#f28740',
+		strokeColor : LRT2_COLOR,
 		strokeOpacity : 0.9,
 		strokeWeight : 6
 	});
 	var mrt3Display = new google.maps.Polyline({
-		strokeColor : '#5384c4',
+		strokeColor : MRT_COLOR,
 		strokeOpacity : 0.9,
 		strokeWeight : 6
 	});
 	var pnrDisplay = new google.maps.Polyline({
-		strokeColor : '#ad86bc',
+		strokeColor : PNR_COLOR,
 		strokeOpacity : 0.9,
 		strokeWeight : 6
 	});
@@ -121,6 +126,7 @@ $(document).ready(function($) {
 			}
 		}
 		$.getJSON('./js/stops.data.json', function(json){
+			console.log(json);
 			for(var i in json){
 				var line = json[i];
 				makeStopMarkers(line);				
@@ -128,40 +134,42 @@ $(document).ready(function($) {
 
 			var circleDrawn = false;
 			google.maps.event.addListenerOnce(map, 'idle', function() {				
+				console.log('Loaded');
 				if(!circleDrawn){
 					drawCircles();
 					circleDrawn = true;
 				}		      		
 			});
 			google.maps.event.addListenerOnce(map, 'tilesloaded', function() {				
+				console.log('TIles');
 				if(!circleDrawn){
 					drawCircles();
 					circleDrawn = true;
 				}		      		
 			});
-	});
+	}).error(function(err){console.log(err)});
 
 	function drawCircles(){
-		$('.LRT1').svg({onLoad: function(svg){
-		      		console.log('Drawing: .LRT1');
-		      		drawCircle(svg, '#fdc33c');
-		      	}
-		      });
-		      $('.LRT2').svg({onLoad: function(svg){
-		      		console.log('Drawing: .LRT2');
-		      		drawCircle(svg, '#f28740');
-		      	}
-		      });
-		      $('.MRT').svg({onLoad: function(svg){
-		      		console.log('Drawing: .MRT');
-		      		drawCircle(svg, '#5384c4');
-		      	}
-		      });
-		      $('.PNR').svg({onLoad: function(svg){
-		      		console.log('Drawing: .PNR');
-		      		drawCircle(svg, '#ad86bc');
-		      	}
-		      });
+		$('.LRT1-marker').svg({onLoad: function(svg){
+		      	console.log('Drawing: .LRT1');
+		    	drawCircle(svg, LRT1_COLOR);
+			}
+		});
+		$('.LRT2-marker').svg({onLoad: function(svg){
+				console.log('Drawing: .PNR');
+		      	drawCircle(svg, LRT2_COLOR);
+			}
+		});
+		$('.PNR-marker').svg({onLoad: function(svg){
+				console.log('Drawing: .LRT2');
+		      	drawCircle(svg, PNR_COLOR);
+			}
+		});
+		$('.MRT-marker').svg({onLoad: function(svg){
+				console.log('Drawing: .MRT');
+		      	drawCircle(svg, MRT_COLOR);
+			}
+		});
 	}
 
 	function makeStopMarkers(line){
@@ -182,9 +190,17 @@ $(document).ready(function($) {
 	}
 
 	var selectedWindow;
+	var clickedMarker = false;
+	var markerOpen = false;
 
 	function attachInfoWindow(marker, stop){
 		var infoWindow = createInfoWindow(stop.name);
+		google.maps.event.addListener(marker, 'click', function(){
+			infoWindow.open(map, marker);
+			selectedWindow = infoWindow;
+			clickedMarker = !clickedMarker;
+			toggleSidebar(stop);
+		});
 		google.maps.event.addListener(marker, 'mouseover', function(){
 			if(selectedWindow){
 				selectedWindow.close();
@@ -193,10 +209,43 @@ $(document).ready(function($) {
 			selectedWindow = infoWindow;
 		});
 		google.maps.event.addListener(marker, 'mouseout', function(){
+			if(clickedMarker) return;
 			if(selectedWindow){
 				selectedWindow.close();
 			}			
 		});
+	}
+
+	function toggleSidebar(stop){
+		var stopContainer = $('#stop-details');
+		var width = stopContainer.width();
+		
+		if(markerOpen){
+			stopContainer.css('border-right' , "none");
+			stopContainer.animate({"right": "0px"}, "slow", function(){markerOpen = false;});
+		}else{
+			var name = stop.name.split(' ');
+			var line = name[0];
+			name.splice(0, 1);
+			name = name.join(' ');
+			
+			var color;
+
+			switch(line){
+				case 'LRT-1' : color = LRT1_COLOR;
+								break;
+				case 'LRT-2' : color = LRT2_COLOR;
+								break;
+				case 'MRT-3' : color = MRT_COLOR;
+								break;
+				case 'PNR' : color = PNR_COLOR;
+								break;
+			}
+			stopContainer.find("#stop-name").html(line + ' ' + name);
+			stopContainer.find("#description").html(stop.details.description)
+			stopContainer.css('border-right' , "solid 6px " + color);
+			stopContainer.animate({"right": "+="+width+"px"}, "slow", function(){markerOpen = true;});
+		}
 	}
 
 	function drawCircle(svg, color){
@@ -219,7 +268,7 @@ $(document).ready(function($) {
 
 	function div(name){
 		var m = document.createElement('DIV');
-        m.innerHTML = '<div class="stop-marker '+name+'" style="width: 30px; height: 30px;"></div>';
+        m.innerHTML = '<div class="stop-marker '+name+'-marker" style="width: 30px; height: 30px;"></div>';
         return m;
 	}
 	

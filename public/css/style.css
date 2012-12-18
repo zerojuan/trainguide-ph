@@ -69,3 +69,50 @@ body{
 	min-height: 30px;
 	text-align: center;
 }
+
+ul.lines{
+	text-decoration: none;
+}
+
+.lines li{
+	list-style: none;	
+	height: 60px;
+	width: 100%;
+	font-size: 24px;
+	color: white;
+}
+
+.lines li div{
+	padding-left: 10px;
+	padding-top: 30px;
+}
+
+li.LRT1{
+	background: #fdc33c;
+}
+li.LRT2{
+	background: #ad86bc;
+}
+li.MRT3{
+	background: #5384c4;
+}
+li.PNR{
+	background: #f28740;
+}
+
+.sidebar .content{
+	margin-top: 40px;
+}
+
+.info{
+	width: 70%;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.info span{
+	height: 40px;
+	padding: 10px;
+	background: #ccc;
+}
