@@ -190,7 +190,7 @@ $(document).ready(function($) {
 	}
 
 	var selectedWindow;
-	var selectedStop;
+	var prevStop;
 	var clickedMarker = false;
 	var markerOpen = false;
 
@@ -221,26 +221,28 @@ $(document).ready(function($) {
 		var stopContainer = $('#stop-details');
 		
 		if(markerOpen){
-			if(selectedStop && stop.name == selectedStop.name){
+			if(prevStop && stop.name == prevStop.name){
+				console.log('Selected stop is the same as before');
 				hideSideBar(stopContainer, function(){markerOpen = false;});				 
-				selectedStop = stop;
+				prevStop = stop;
 			}else{
 				hideSideBar(stopContainer, function(){
 					showSideBar(stopContainer, stop, function(){
 						markerOpen = true;
 					});
 				})
-				selectedStop = stop;	
+				prevStop = stop;	
 			}
 			
 		}else{
 			showSideBar(stopContainer, stop, function(){markerOpen = true;});
+			prevStop = stop;
 		}
 	}
 
 	function hideSideBar(stopContainer, onComplete){
 		stopContainer.css('border-right' , "none");
-		stopContainer.animate({"right": "0px"}, "slow", onComplete);	
+		stopContainer.animate({"right": "0px"}, "fast", onComplete);	
 	}
 
 	function showSideBar(stopContainer, stop, onComplete){

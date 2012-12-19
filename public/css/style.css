@@ -116,3 +116,11 @@ li.PNR{
 	padding: 10px;
 	background: #ccc;
 }
+
+.info span:hover{
+	background: #aaa;
+}
+
+.info a{
+	text-decoration: none;
+}
