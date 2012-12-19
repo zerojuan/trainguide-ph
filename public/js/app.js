@@ -190,6 +190,7 @@ $(document).ready(function($) {
 	}
 
 	var selectedWindow;
+	var selectedStop;
 	var clickedMarker = false;
 	var markerOpen = false;
 
@@ -218,34 +219,53 @@ $(document).ready(function($) {
 
 	function toggleSidebar(stop){
 		var stopContainer = $('#stop-details');
-		var width = stopContainer.width();
 		
 		if(markerOpen){
-			stopContainer.css('border-right' , "none");
-			stopContainer.animate({"right": "0px"}, "slow", function(){markerOpen = false;});
-		}else{
-			var name = stop.name.split(' ');
-			var line = name[0];
-			name.splice(0, 1);
-			name = name.join(' ');
-			
-			var color;
-
-			switch(line){
-				case 'LRT-1' : color = LRT1_COLOR;
-								break;
-				case 'LRT-2' : color = LRT2_COLOR;
-								break;
-				case 'MRT-3' : color = MRT_COLOR;
-								break;
-				case 'PNR' : color = PNR_COLOR;
-								break;
+			if(selectedStop && stop.name == selectedStop.name){
+				hideSideBar(stopContainer, function(){markerOpen = false;});				 
+				selectedStop = stop;
+			}else{
+				hideSideBar(stopContainer, function(){
+					showSideBar(stopContainer, stop, function(){
+						markerOpen = true;
+					});
+				})
+				selectedStop = stop;	
 			}
-			stopContainer.find("#stop-name").html(line + ' ' + name);
-			stopContainer.find("#description").html(stop.details.description)
-			stopContainer.css('border-right' , "solid 6px " + color);
-			stopContainer.animate({"right": "+="+width+"px"}, "slow", function(){markerOpen = true;});
+			
+		}else{
+			showSideBar(stopContainer, stop, function(){markerOpen = true;});
 		}
+	}
+
+	function hideSideBar(stopContainer, onComplete){
+		stopContainer.css('border-right' , "none");
+		stopContainer.animate({"right": "0px"}, "slow", onComplete);	
+	}
+
+	function showSideBar(stopContainer, stop, onComplete){
+		var width = stopContainer.width();
+		var name = stop.name.split(' ');
+		var line = name[0];
+		name.splice(0, 1);
+		name = name.join(' ');
+		
+		var color;
+
+		switch(line){
+			case 'LRT-1' : color = LRT1_COLOR;
+							break;
+			case 'LRT-2' : color = LRT2_COLOR;
+							break;
+			case 'MRT-3' : color = MRT_COLOR;
+							break;
+			case 'PNR' : color = PNR_COLOR;
+							break;
+		}
+		stopContainer.find("#stop-name").html(line + ' ' + name);
+		stopContainer.find("#description").html(stop.details.description)
+		stopContainer.css('border-right' , "solid 6px " + color);
+		stopContainer.animate({"right": "+="+width+"px"}, "slow", function(){markerOpen = true;});		
 	}
 
 	function drawCircle(svg, color){
