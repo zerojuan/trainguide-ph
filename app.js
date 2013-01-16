@@ -1,5 +1,5 @@
 var application_root = __dirname,
-	qs = require('querystring'),
+	qs = require("querystring"),
 	express =  require("express"),
 	request = require("request"),	
 	fs = require("fs");
@@ -15,7 +15,6 @@ app.configure(function(){
 });
 
 //SETUP API
-
 app.get('/setup', function(req, res){
 	//do some http-requests to fill data for our the main routes
 	var mrtTaft = {
@@ -62,10 +61,7 @@ app.get('/setup', function(req, res){
 							getDirections(pnrAlabang, pnrTutuban, lines, 'PNR');						
 						});					
 				});
-	});
-	
-
-	
+	});		
 
 });
 
