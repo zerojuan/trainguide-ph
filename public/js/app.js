@@ -201,6 +201,11 @@ $(document).ready(function($) {
 			selectedWindow = infoWindow;
 			clickedMarker = !clickedMarker;
 			toggleSidebar(stop);
+
+			//zoom into location
+			map.panTo(new google.maps.LatLng(stop.position.lat, stop.position.long));
+			map.setZoom(16);
+
 		});
 		google.maps.event.addListener(marker, 'mouseover', function(){
 			if(selectedWindow){
@@ -267,7 +272,7 @@ $(document).ready(function($) {
 		stopContainer.find("#stop-name").html(line + ' ' + name);
 		stopContainer.find("#description").html(stop.details.description)
 		stopContainer.css('border-right' , "solid 6px " + color);
-		stopContainer.animate({"right": "+="+width+"px"}, "slow", function(){markerOpen = true;});		
+		stopContainer.animate({"right": "+="+(width-1)+"px"}, "slow", function(){markerOpen = true;});		
 	}
 
 	function drawCircle(svg, color){

@@ -10,6 +10,10 @@ body{
 	font-family: 'Ubuntu', sans-serif;
 }
 
+.clearfix{
+	clear: both;
+}
+
 .container{
 	width: 100%;
 	height: 100%;
@@ -17,39 +21,63 @@ body{
 }
 
 .sidebar{
-	width: 20%;
-	min-width: 273px;
-	max-width: 290px; 
+	width: 18%;
+	min-width: 240px;
+	max-width: 250px; 
 	height: 100%;
-	position: absolute;	
-	background: #e5e8e8;
+	position: fixed;	
+	background: #efefef;
 	float: right;
 	top: 0;
 	right: 0;
 }
 
-.header{
-	
-	font-size: 28pt;
-	margin: 20px 10px 10px 10px;
-
+.sidebar.left{
+	left: 0;
+	right: none;
 }
 
-.header .title{
-	float: left;
-	width: 40%;
+.left{	
+	float: none;
+}
+
+.sidebar.left .subheader{
+	font-size: 12pt;
+	width: 100%;
+}
+
+.left .content{
+	margin-left: 10px;
+	margin-right: 10px;
+	bottom: 0px;
+}
+
+.header{
+	font-size: 25pt;
+	margin: 20px 10px 10px 10px;
+}
+
+.title{
+	font-size: 25pt;
+}
+
+.header .title{	
+	/*width: 40%;*/
 }
 
 .header .logo{
-	float: right;	
+	float: right;
+	padding: 10px 10px;	
 }
 
 .subheader{
-	clear: both;
+	float: left;
+	padding: 0 0 10px 0;
+	width: 50%;
 }
 
 .subheader p{
-	font-size: 12pt;
+	font-size: 13.5pt;
 	padding-top: 10px;	
 }
 
@@ -72,11 +100,12 @@ body{
 
 ul.lines{
 	text-decoration: none;
+	margin-top: 20px;
 }
 
 .lines li{
 	list-style: none;	
-	height: 60px;
+	height: 40px;
 	width: 100%;
 	font-size: 24px;
 	color: white;
@@ -84,7 +113,7 @@ ul.lines{
 
 .lines li div{
 	padding-left: 10px;
-	padding-top: 30px;
+	padding-top: 10px;
 }
 
 li.LRT1{
@@ -100,21 +129,25 @@ li.PNR{
 	background: #f28740;
 }
 
-.sidebar .content{
-	margin-top: 40px;
-}
 
 .info{
-	width: 70%;
-	height: 50px;
-	margin: 0 auto;
+	width: 100%;	
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 10px;	
+	padding-bottom: 10px;
 	text-align: center;
+}
+
+.left .info{
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .info span{
 	height: 40px;
-	padding: 10px;
-	background: #ccc;
+	padding: 5px;	
 }
 
 .info span:hover{
@@ -123,4 +156,40 @@ li.PNR{
 
 .info a{
 	text-decoration: none;
+}
+
+.places{
+	margin-top: 10px;
+}
+
+.places-list{	
+	font-size: 10pt;
+	background: white;
+	margin-top: 10px;
+	min-height: 250px;
+	height: 100%;
+}
+
+.places-list li{	
+	padding: 10px 0px 5px 10px;
+	list-style: none;	
+}
+
+.places-list li:hover{
+	background: #ccc;	
+}
+
+.recommends{
+	position: absolute;	
+	min-width: 230px;
+	bottom: 50px;	
+	margin: 0 10px 0 10px;
+}
+
+.recommends-content{	
+	height: 250px;	
+}
+
+.recommends-content img{
+	margin-bottom: 5px;
 }
