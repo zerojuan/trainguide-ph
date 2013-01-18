@@ -272,7 +272,7 @@ $(document).ready(function($) {
 		stopContainer.find("#stop-name").html(line + ' ' + name);
 		stopContainer.find("#description").html(stop.details.description)
 		stopContainer.css('border-right' , "solid 6px " + color);
-		stopContainer.animate({"right": "+="+(width-1)+"px"}, "slow", function(){markerOpen = true;});		
+		stopContainer.animate({"right": "+="+(width-1)+"px"}, "fast", function(){markerOpen = true;});		
 	}
 
 	function drawCircle(svg, color){
