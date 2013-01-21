@@ -21,6 +21,18 @@ body{
 	position: relative;
 }
 
+.content-bottom {
+	background: #F8F8F8; 
+	padding-left: 10px;
+	padding-right: 10px;
+	bottom: 0px; 
+	min-height: 300px;
+}
+
+.greyed {
+	background: #F8F8F8; 
+}
+
 .sidebar{
 	width: 18%;
 	min-width: 240px;
@@ -50,6 +62,7 @@ body{
 .left .content{
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-top: 10px;
 	bottom: 0px;
 }
 
@@ -121,16 +134,66 @@ ul.lines{
 li.LRT1{
 	background: #fdc33c;
 }
+
+li.LRT1.clicked{
+	background: #fdc33c;
+	height: 200px;
+}
+
+li.LRT1.clicked p{
+	font-size: 12px;
+	color: black;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
 li.LRT2{
 	background: #ad86bc;
 }
-li.MRT3{
+
+li.LRT2.clicked{
+	background: #ad86bc;
+	height: 200px;
+}
+
+li.LRT2.clicked p{
+	font-size: 12px;
+	color: black;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+li.MRT{
 	background: #5384c4;
 }
+
+li.MRT.clicked{
+	background: #5384c4;
+	height: 200px;
+}
+
+li.MRT.clicked p{
+	font-size: 12px;
+	color: black;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
 li.PNR{
 	background: #f28740;
 }
 
+li.PNR.clicked{
+	background: #f28740;
+	height: 200px;
+}
+
+li.PNR.clicked p{
+	font-size: 12px;
+	color: black;
+	padding-left: 10px;
+	padding-top: 10px;
+}
 
 .info{
 	width: 100%;	
@@ -160,6 +223,21 @@ li.PNR{
 	text-decoration: none;
 }
 
+.padded {
+	padding-top: 10px;	
+	padding-bottom: 10px;
+}
+
+#photo-submit {
+	float: right;
+	font-size: 10px;
+	height: 0;
+}
+
+#photo-submit:hover{
+	background: none;
+}
+
 .places{
 	margin-top: 10px;
 }
@@ -168,13 +246,28 @@ li.PNR{
 	font-size: 10pt;
 	background: white;
 	margin-top: 10px;
-	min-height: 250px;
+	/*min-height: 250px;*/
 	height: 100%;
+}
+
+.places-list-greyed{
+	background: #F8F8F8;
 }
 
 .places-list li{	
 	padding: 10px 0px 5px 10px;
 	list-style: none;	
+}
+
+.places-list-greyed li{	
+	padding: 10px 0px 5px 10px;
+	list-style: none;	
+}
+
+.places-list-greyed li span{	
+	float: right;
+	height: 0;
+	padding: 0;
 }
 
 .places-list li:hover{
@@ -195,3 +288,11 @@ li.PNR{
 .recommends-content img{
 	margin-bottom: 5px;
 }
+
+.top-bordered {
+	border-top: 1px solid black;
+}
+/*
+#transportation-details {
+	left: 500px;
+}*/

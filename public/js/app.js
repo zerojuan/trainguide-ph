@@ -4,6 +4,7 @@ $(document).ready(function($) {
 	var MRT_COLOR = '#5384c4';
 	var PNR_COLOR = '#f28740';
 
+
 	var mapStyle = [
 		{
 			featureType:"road",
@@ -85,6 +86,8 @@ $(document).ready(function($) {
 		strokeWeight : 6
 	});
 
+		var line_data = [];
+
 	var map = new google.maps.Map(document.getElementById("map_canvas"),
 		mapOptions);	
 
@@ -109,6 +112,7 @@ $(document).ready(function($) {
 		console.log(json);
 		for(var i in json){
 			var line = json[i];
+			line_data.push(line);
 			var decodedPath = google.maps.geometry.encoding.decodePath(line.points);
 			switch(line.name){
 				case 'LRT1' :
@@ -221,6 +225,30 @@ $(document).ready(function($) {
 			}			
 		});
 	}
+
+	$('#transportation li').click(function(){
+			var transObj = $(this);
+			var transName = transObj.attr("class").split(" ")[0]; // data will be "LRT1 clicked" when li is clicked twice
+
+			$.each(line_data, function(key, value){
+				$('#transportation li.' + value.name + '.clicked p').remove();
+  			$('#transportation li.' + value.name + '.clicked').removeClass('clicked');
+			});
+
+		 	console.log('Transportation selected: ' + transName);
+
+		 	if(transObj){
+				transObj.addClass('clicked');
+				for(var i in line_data){
+					var line = line_data[i];
+					if(line.name == transName){
+						transObj.append('<p>Weekdays: '+ line.weekdays +'<br/>Weekend: '+ line.weekend +'<br/>Contact No.: '+ line.contactNo +'<br/>Email: '+ line.email +'<br/>Web: '+ line.web +'<br/>Twitter: '+ line.twitter +'<br/>Fare: '+ line.fare +'<br/>Stored Value Card: '+ line.svc +'</p>');		
+						//toggleSidebar(line);
+					}
+				}
+		 	}
+		}
+	);
 
 	function toggleSidebar(stop){
 		var stopContainer = $('#stop-details');
