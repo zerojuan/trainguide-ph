@@ -226,29 +226,29 @@ $(document).ready(function($) {
 		});
 	}
 
-	$('#transportation li').click(function(){
-			var transObj = $(this);
-			var transName = transObj.attr("class").split(" ")[0]; // data will be "LRT1 clicked" when li is clicked twice
+	// $('#transportation li').click(function(){
+	// 		var transObj = $(this);
+	// 		var transName = transObj.attr("class").split(" ")[0]; // data will be "LRT1 clicked" when li is clicked twice
 
-			$.each(line_data, function(key, value){
-				$('#transportation li.' + value.name + '.clicked p').remove();
-  			$('#transportation li.' + value.name + '.clicked').removeClass('clicked');
-			});
+	// 		$.each(line_data, function(key, value){
+	// 			$('#transportation li.' + value.name + '.clicked p').remove();
+ //  			$('#transportation li.' + value.name + '.clicked').removeClass('clicked', 5000);
+	// 		});
 
-		 	console.log('Transportation selected: ' + transName);
+	// 	 	console.log('Transportation selected: ' + transName);
 
-		 	if(transObj){
-				transObj.addClass('clicked');
-				for(var i in line_data){
-					var line = line_data[i];
-					if(line.name == transName){
-						transObj.append('<p>Weekdays: '+ line.weekdays +'<br/>Weekend: '+ line.weekend +'<br/>Contact No.: '+ line.contactNo +'<br/>Email: '+ line.email +'<br/>Web: '+ line.web +'<br/>Twitter: '+ line.twitter +'<br/>Fare: '+ line.fare +'<br/>Stored Value Card: '+ line.svc +'</p>');		
-						//toggleSidebar(line);
-					}
-				}
-		 	}
-		}
-	);
+	// 	 	if(transObj){
+	// 			transObj.addClass('clicked', 5000);
+	// 			for(var i in line_data){
+	// 				var line = line_data[i];
+	// 				if(line.name == transName){
+	// 					transObj.append('<p>Weekdays: '+ line.weekdays +'<br/>Weekend: '+ line.weekend +'<br/>Contact No.: '+ line.contactNo +'<br/>Email: '+ line.email +'<br/>Web: '+ line.web +'<br/>Twitter: '+ line.twitter +'<br/>Fare: '+ line.fare +'<br/>Stored Value Card: '+ line.svc +'</p>');		
+	// 					toggleSidebar(line);
+	// 				}
+	// 			}
+	// 	 	}
+	// 	}
+	// );
 
 	function toggleSidebar(stop){
 		var stopContainer = $('#stop-details');
@@ -287,6 +287,8 @@ $(document).ready(function($) {
 		
 		var color;
 
+		// previous execution
+
 		switch(line){
 			case 'LRT-1' : color = LRT1_COLOR;
 							break;
@@ -299,6 +301,17 @@ $(document).ready(function($) {
 		}
 		stopContainer.find("#stop-name").html(line + ' ' + name);
 		stopContainer.find("#description").html(stop.details.description)
+
+		// switch(line){
+		// 	case 'LRT1' : color = LRT1_COLOR;
+		// 					break;
+		// 	case 'LRT2' : color = LRT2_COLOR;
+		// 					break;
+		// 	case 'MRT' : color = MRT_COLOR;
+		// 					break;
+		// 	case 'PNR' : color = PNR_COLOR;
+		// 					break;
+		// }
 		stopContainer.css('border-right' , "solid 6px " + color);
 		stopContainer.animate({"right": "+="+(width-1)+"px"}, "fast", function(){markerOpen = true;});		
 	}

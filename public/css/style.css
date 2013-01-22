@@ -129,6 +129,7 @@ ul.lines{
 .lines li div{
 	padding-left: 10px;
 	padding-top: 10px;
+	cursor: pointer;
 }
 
 li.LRT1{
@@ -248,10 +249,15 @@ li.PNR.clicked p{
 	margin-top: 10px;
 	/*min-height: 250px;*/
 	height: 100%;
+	max-height: 130px;
+	overflow: auto;
 }
 
 .places-list-greyed{
 	background: #F8F8F8;
+	height: 100%;
+	max-height: 110px;
+	overflow: auto;
 }
 
 .places-list li{	
